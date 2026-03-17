@@ -4,3 +4,10 @@ class Receta(BaseModel):
     nombre: str
     ingredientes: list[str]
     pasos: list[str]
+    categoria: str
+
+class RecetaUpdate(BaseModel):
+    nombre: str
+    ingredientes: list[str]
+    pasos: list[str]
+    categoria: str
