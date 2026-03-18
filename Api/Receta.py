@@ -1,13 +1,20 @@
 from pydantic import BaseModel
-class Receta(BaseModel):
-    id: int
+
+class Ingrediente(BaseModel):
     nombre: str
-    ingredientes: list[str]
+    cantidad: float
+    unidad: str
+    
+class Receta(BaseModel):
+    nombre: str
+    ingredientes: list[Ingrediente]
     pasos: list[str]
     categoria: str
 
 class RecetaUpdate(BaseModel):
     nombre: str
-    ingredientes: list[str]
+    ingredientes: list[Ingrediente]
     pasos: list[str]
     categoria: str
+
+

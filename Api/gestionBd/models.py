@@ -17,6 +17,7 @@ class RecetaModel(Base):
     pasos        = Column(Text, nullable=False)
     categoria = Column(String(50), nullable=False)
     ingredientes = relationship("RecetaIngrediente", back_populates="receta")
+    imagen = Column(String(200), nullable=True)  # nullable porque no todas tienen imagen
 
 
 
