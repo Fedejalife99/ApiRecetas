@@ -244,6 +244,11 @@ Todos los endpoints devuelven un formato de error consistente:
 }
 ```
 
+## 🤖 Asistencia de IA
+
+Este proyecto fue desarrollado con la asistencia de Claude (Anthropic) como herramienta de aprendizaje.
+Todo el código fue revisado, comprendido y adaptado por el autor.
+El objetivo fue aprender FastAPI y SQLAlchemy, no solo generar código funcional.
 ---
 
 ## 📄 Licencia
